@@ -1,0 +1,9 @@
+{
+  "name": "geo-xy",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Oleg Torosyan",
+  "repository": "https://github.com/rodion-raskolnikov/geo-xy",
+  "keywords": ["geo", "latitude", "longitude", "xy", "cartesian", "coordinate", "plane", "adjacent", "flat", "earth", "map"],
+  "license": "MIT"
+}
