@@ -13,7 +13,7 @@ with max zoom) within at least 20 miles from a center point.
 
 installation
 ------------
-### 1. get the library
+### get the library
 
     $ npm install geo-xy
 
