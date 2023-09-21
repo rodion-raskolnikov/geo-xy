@@ -1,7 +1,7 @@
 {
   "name": "geo-xy",
   "version": "1.0.0",
-  "description": "",
+  "description": "A set of functions to translate spherical approximation of an earth angular coordinates (lat, lng) to a cartesian coordinates (x, y) on an adjacent to sphere plane in some center point and then translate back to display on a map.",
   "author": "Oleg Torosyan",
   "repository": "https://github.com/rodion-raskolnikov/geo-xy",
   "keywords": ["geo", "latitude", "longitude", "xy", "cartesian", "coordinate", "plane", "adjacent", "flat", "earth", "map"],

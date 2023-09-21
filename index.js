@@ -1,5 +1,11 @@
 /**
  * Created by https://github.com/rodion-raskolnikov
+ * 
+ * set of functions to translate spherical approximation of an earth
+ * angular coordinates (lat, lng) to a cartesian coordinates (x, y) on
+ * an adjacent to sphere plane in some center point and then translate
+ * back to display on a map
+ * 
  */
 
 const radius = 6378137;
@@ -12,6 +18,8 @@ const toRad = (deg) => deg * TO_RAD;
 const toDeg = (rad) => rad * TO_DEG;
 
 /**
+ * 
+ * distance between two points on a sphere
  * 
  * @param {{ lat: number, lng: number }} start 
  * @param {{ lat: number, lng: number }} end 
@@ -28,6 +36,9 @@ const getDistance = (start, end) =>
 
 /**
  * 
+ * translates lat, lng to xy in meters with center being (0, 0)
+ * and y points north and x points east
+ * 
  * @param {{ lat: number, lng: number }} loc 
  * @param {{ lat: number, lng: number }} center 
  * @returns {{ x: number, y: number }}
@@ -41,6 +52,9 @@ const getXY = (loc, center) => {
 
 /**
  * 
+ * translates xy off of a center to lat, lng
+ * center should be the same point that were used to produce xy
+ * 
  * @param {{ x: number, y: number }} xy 
  * @param {{ lat: number, lng: number }} center 
  * @returns {{ lat: number, lng: number }}
@@ -53,6 +67,10 @@ const getLoc = (xy, center) => {
 };
 
 /**
+ * 
+ * cosine of an angle between center to xy1 and center to xy2
+ * could be useful in determining if xy1 and xy2 are about in the
+ * same direction from center
  * 
  * @param {{ x: number, y: number }} xy1
  * @param {{ x: number, y: number }} xy2 
