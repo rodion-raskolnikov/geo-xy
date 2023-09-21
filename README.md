@@ -8,7 +8,7 @@ back to display on a map.
 
 Y axis points north, X axis points east and center point is (0, 0)
 
-Works with good practical precission (displayuin on a map [mapbox, leaflet, google]
+Works with good practical precission (displaying on a map [mapbox, leaflet, google]
 with max zoom) within at least 20 miles from a center point.
 
 installation:
